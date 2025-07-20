@@ -55,7 +55,7 @@ function toggleTask(index) {
 }
 
 function clearTasks() {
-    localStorage.clear();
+    localStorage.removeItem("tasks");
     taskList = [];
     document.getElementById("currentTask").innerHTML = "";
     alert("All tasks have been cleared!");
